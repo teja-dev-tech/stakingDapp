@@ -24,7 +24,6 @@ contract Staking is ReentrancyGuard {
     function stake(uint256 amount) external nonReentrant {
         require(amount > 0, "Cannot stake zero tokens");
 
-        // Update user's rewards
         _updateReward(msg.sender);
 
         stakedBalance[msg.sender] += amount;
@@ -40,8 +39,7 @@ contract Staking is ReentrancyGuard {
     function unstake(uint256 amount) external nonReentrant {
         require(amount > 0, "Cannot unstake zero tokens");
         require(stakedBalance[msg.sender] >= amount, "Insufficient staked balance");
-
-        // Update user's rewards
+   
         _updateReward(msg.sender);
 
         stakedBalance[msg.sender] -= amount;

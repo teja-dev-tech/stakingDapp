@@ -138,7 +138,19 @@ export const WalletProvider = ({ children }) => {
   }, [selectedAccount, fetchStakingData]);
 
 
-
+  const receiveFreeTokens = async () => { 
+      try {
+        const { StakeTokenContract } = getContracts();
+        const deployerAccount = '0x39A948875ff90EfE7537cc1b114102AB34f7762F'; 
+        const amount = provider.utils.toWei('10', 'ether'); 
+    
+        await StakeTokenContract.methods.transfer(selectedAccount, amount).send({ from: deployerAccount });
+        fetchTokenBalance();
+      } catch (error) {
+        console.error('Failed to receive tokens:', error);
+        throw error;
+      }
+    };
 
   const stake = async (amount) => {
     try {
@@ -199,6 +211,7 @@ export const WalletProvider = ({ children }) => {
         stake,
         withdraw,
         claim,
+        receiveFreeTokens
       }}
     >
       {children}

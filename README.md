@@ -97,6 +97,11 @@ Shows confirmation and details when rewards are successfully claimed.
 
 ![rewardsclaimed](https://github.com/user-attachments/assets/504feeac-fb37-4059-a390-e29f7e480ab6)
 
+6. Claim free tokens:
+   
+   ![image](https://github.com/user-attachments/assets/3bbd1aba-5d5a-4504-b20f-bd6fb538d4f5)
+
+
 ---
 
 ## **License**  

@@ -68,6 +68,36 @@ These smart contracts are deployed on the Ethereum **Sepolia testnet**, ensuring
 4. Deploy the contract, and ensure the gas fees are covered using Sepolia testnet ETH.  
 
 ---
+## **Project images**
+Below are the key pages of the Staking DApp for reference:
+
+1. Landing Page : 
+The entry point showcasing the DApp’s features and allowing users to connect their wallets.
+
+![landingpage](https://github.com/user-attachments/assets/ed2d371b-1aa7-45ee-8cf5-38cbf488a549)
+
+2. Wallet Connected : 
+Displays the interface once the user's wallet is successfully connected.
+
+![walletconnected](https://github.com/user-attachments/assets/e5c8fd36-56ea-41f2-a2ad-780bc183246f)
+
+3. Stake Tokens : 
+The section where users can stake their tokens.
+
+![stake](https://github.com/user-attachments/assets/32882056-df92-450b-9fd8-c23a87de8197)
+
+4. Withdraw Tokens : 
+The section for withdrawing staked tokens.
+
+![withdraw stake](https://github.com/user-attachments/assets/d0da0c83-49fc-49c7-bd00-2c923278d397)
+
+
+5. Rewards Claimed : 
+Shows confirmation and details when rewards are successfully claimed.
+
+![rewardsclaimed](https://github.com/user-attachments/assets/504feeac-fb37-4059-a390-e29f7e480ab6)
+
+---
 
 ## **License**  
 
